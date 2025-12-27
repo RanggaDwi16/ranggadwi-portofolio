@@ -3,403 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rangga Dwi Portofolio</title>
+    <meta name="description" content="Rangga Dwi Saputra - Software Engineer specializing in mobile app development, project management, and agile methodologies. Building innovative solutions that drive business growth." />
+    <meta name="keywords" content="Software Engineer, Mobile Developer, Flutter Developer, Project Manager, Scrum Master, Indonesia" />
+    <meta name="author" content="Rangga Dwi Saputra" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Rangga Dwi Saputra - Software Engineer" />
+    <meta property="og:description" content="Building innovative digital solutions with expertise in mobile development and project management." />
+    <meta property="og:type" content="website" />
+    
+    <title>Rangga Dwi Saputra | Software Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Memoji.png" type="image/png" sizes="40x40" />
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      href="img/logo-header.png"
-      type="image/png"
-      sizes="40x40"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
+  
   <body>
-    <!-- Header Section -->
-    <header>
-      <div class="logo"><span>R</span>angga<span>D</span>wi</div>
-      <ul class="navlist">
-        <li><a href="#home" style="--i: 1">Home</a></li>
-        <li><a href="#about" style="--i: 2">About</a></li>
-        <li><a href="#services" style="--i: 3">Services</a></li>
-        <li><a href="#skills" style="--i: 4">Skills</a></li>
-        <li><a href="#portofolio" style="--i: 5">Portofolio</a></li>
-        <li><a href="#contact" style="--i: 6">Contact</a></li>
-      </ul>
-      <div id="menu-icon" class="bx bx-menu"></div>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header class="header" id="header">
+      <div class="header__container">
+        <a href="#home" class="header__logo">
+          Rangga<span>Dwi</span>
+        </a>
+        
+        <nav class="header__nav" id="nav">
+          <a href="#home" class="header__nav-link active">Home</a>
+          <a href="#about" class="header__nav-link">About</a>
+          <a href="#services" class="header__nav-link">Services</a>
+          <a href="#skills" class="header__nav-link">Skills</a>
+          <a href="#experience" class="header__nav-link">Experience</a>
+          <a href="#portfolio" class="header__nav-link">Portfolio</a>
+          <a href="#contact" class="header__nav-link">Contact</a>
+          <a href="https://wa.me/+62895705458597?text=Hello!%20I%20am%20interested%20in%20discussing%20further%20about%20the%20work%20you%20can%20do." class="header__cta" target="_blank">
+            Let's Talk
+          </a>
+        </nav>
+        
+        <div class="header__menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-      <div class="home-content scroll-scale">
-        <h1>Hi! I'm Rangga Dwi Saputra</h1>
-        <div class="change-text">
-          <h3>And I'm</h3>
-          <h3>
-            <span class="word">Project&nbsp; Manager</span>
-            <span class="word">Scrum&nbsp; Master</span>
-            <span class="word">Mobile&nbsp; App&nbsp; Developer</span>
-            <span class="word">Web&nbsp; Developer</span>
-            <span class="word">Software&nbsp; Engineer</span>
-            <span class="word">Java&nbsp; Programmer</span>
-            <span class="word">Freelancer</span>
-            <span class="word">Event&nbsp; Organizer</span>
-          </h3>
-        </div>
-
-        <p>
-          Welcome to my portfolio! With a diverse background in project
-          management, mobile app development, and agile methodologies, I’m here
-          to help turn your challenges into innovative solutions. Let's explore
-          how my skills can contribute to your team’s success.
-        </p>
-
-        <div class="info-box">
-          <div class="email-info"></div>
-          <div class="behance-info"></div>
-        </div>
-
-        <div class="btn-box">
-          <a
-            href="https://drive.google.com/uc?export=download&id=1NFm_NSsN3EmVpDLzCXHwLY0QiRV9CUwa"
-            class="btn"
-            >Download CV</a
-          >
-          <a
-            href="https://wa.me/+62895705458597?text=Hello!%20I%20am%20interested%20in%20discussing%20further%20about%20the%20work%20you%20can%20do.%20Can%20we%20talk%20more%20about%20the%20project?%20Thank%20you!"
-            class="btn"
-            >Hire Me Now!</a
-          >
-        </div>
-
-        <div class="social-icons">
-          <a href="mailto:ranggadwi16@gmail.com"
-            ><i class="bx bx-envelope"></i
-          ></a>
-          <a href="https://github.com/RanggaDwi16"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="https://x.com/RnggDw_"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/ranggaadwi_/"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/ranggadwi16/"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-        </div>
-      </div>
-
-      <div class="home-image scroll-scale">
-        <div class="img-box">
-          <img src="img/home_section_foto.png" alt="" />
-        </div>
-
-        <div class="liquid-shape">
-          <svg
-            viewBox="0 0 500 500"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="100%"
-            id="blobSvg"
-          >
-            <path fill="#12f7ff">
-              <animate
-                attributeName="d"
-                dur="10000ms"
-                repeatCount="indefinite"
-                values="
-                            M405,295.5Q408,341,371.5,369.5Q335,398,292.5,441.5Q250,485,208,440Q166,395,127,369.5Q88,344,68,297Q48,250,53.5,195Q59,140,107,112.5Q155,85,202.5,64Q250,43,296.5,65.5Q343,88,386,117.5Q429,147,415.5,198.5Q402,250,405,295.5Z;
-                            
-                            M432,304Q437,358,400.5,402.5Q364,447,307,442.5Q250,438,203.5,424Q157,410,103,388Q49,366,37.5,308Q26,250,65,208Q104,166,132.5,130.5Q161,95,205.5,76Q250,57,288,87.5Q326,118,359,143Q392,168,409.5,209Q427,250,432,304Z;
-
-                            M439.96591,298.31007Q417.2749,346.62013,391.01678,397.1894Q364.75866,447.75866,307.37933,434.53409Q250,421.30953,202.36201,417.93074Q154.72403,414.55195,114.37987,383.06872Q74.03571,351.5855,74.2499,300.79275Q74.5541,250,68.79329,196.2480Q63.03248,142.48161,115.88953,125.56872Q168.58658,108.65584,209.29329,83.96591Q250,59.27597,303.93181,61.32613Q357.86363,63.37664,398.82953,101.65315Q439.79544,139.92966,451.22618,194.96483Q462.65692,250,439.96591,298.31007Z;
-
-                            M410.16473,300.1606Q424.42219,350.32119,400.81209,410.14239Q377.20199,469.96358,313.60099,492.39985Q256,514.83612,208.10099,455.65647Q166.20199,396.47682,102.74751,383.9404Q39.29304,371.40398,62.81622,310.70199Q86.3394,250,109.04637,215.68378Q131.75333,181.36756,123.31209,98.98592Q114.87085,16.60428,182.43542,40.74254Q250,64.8888,283.98592,98.75746Q317.97184,132.63413,386.48592,132.42716Q455,132.2202,425.45363,191.1101Q395.90727,250,410.16473,300.1606Z;
-
-                            M406.5,295.5Q408,341,371.5,369.5Q335,398,292.5,441.5Q250,485,208,440Q166,395,127,369.5Q88,344,68,297Q48,250,53.5,195Q59,140,107,112.5Q155,85,202.5,64Q250,43,296.5,65.5Q343,88,386,117.5Q429,147,415.5,198.5Q402,250,406.5,295.5Z;
-
-                            M443.5,295.5Q445,341,408.5,369.5Q372,398,329.5,441.5Q287,485,245,440Q203,395,164,369.5Q125,344,105,297Q85,250,90.5,195Q96,140,144,112.5Q192,85,239.5,64Q287,43,333.5,65.5Q380,88,423,117.5Q466,147,452.5,198.5Q439,250,443.5,295.5Z;
-
-                            M405,295.5Q408,341,371.5,369.5Q335,398,292.5,441.5Q250,485,208,440Q166,395,127,369.5Q88,344,68,297Q48,250,53.5,195Q59,140,107,112.5Q155,85,202.5,64Q250,43,296.5,65.5Q343,88,386,117.5Q429,147,415.5,198.5Q402,250,405,295.5Z;
-
-
-                            "
-              ></animate>
-            </path>
-          </svg>
-        </div>
-
-        <div class="liquid-shape">
-          <svg
-            viewBox="0 0 500 500"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="100%"
-            id="blobSvg"
-          >
-            <path fill="#12f7ff">
-              <animate
-                attributeName="d"
-                dur="10000ms"
-                repeatCount="indefinite"
-                values="
-                            M405,295.5Q408,341,371.5,369.5Q335,398,292.5,441.5Q250,485,208,440Q166,395,127,369.5Q88,344,68,297Q48,250,53.5,195Q59,140,107,112.5Q155,85,202.5,64Q250,43,296.5,65.5Q343,88,386,117.5Q429,147,415.5,198.5Q402,250,405,295.5Z;
-                            
-                            M432,304Q437,358,400.5,402.5Q364,447,307,442.5Q250,438,203.5,424Q157,410,103,388Q49,366,37.5,308Q26,250,65,208Q104,166,132.5,130.5Q161,95,205.5,76Q250,57,288,87.5Q326,118,359,143Q392,168,409.5,209Q427,250,432,304Z;
-
-                            M439.96591,298.31007Q417.2749,346.62013,391.01678,397.1894Q364.75866,447.75866,307.37933,434.53409Q250,421.30953,202.36201,417.93074Q154.72403,414.55195,114.37987,383.06872Q74.03571,351.5855,74.2499,300.79275Q74.5541,250,68.79329,196.2480Q63.03248,142.48161,115.88953,125.56872Q168.58658,108.65584,209.29329,83.96591Q250,59.27597,303.93181,61.32613Q357.86363,63.37664,398.82953,101.65315Q439.79544,139.92966,451.22618,194.96483Q462.65692,250,439.96591,298.31007Z;
-
-                            M410.16473,300.1606Q424.42219,350.32119,400.81209,410.14239Q377.20199,469.96358,313.60099,492.39985Q256,514.83612,208.10099,455.65647Q166.20199,396.47682,102.74751,383.9404Q39.29304,371.40398,62.81622,310.70199Q86.3394,250,109.04637,215.68378Q131.75333,181.36756,123.31209,98.98592Q114.87085,16.60428,182.43542,40.74254Q250,64.8888,283.98592,98.75746Q317.97184,132.63413,386.48592,132.42716Q455,132.2202,425.45363,191.1101Q395.90727,250,410.16473,300.1606Z;
-
-                            M406.5,295.5Q408,341,371.5,369.5Q335,398,292.5,441.5Q250,485,208,440Q166,395,127,369.5Q88,344,68,297Q48,250,53.5,195Q59,140,107,112.5Q155,85,202.5,64Q250,43,296.5,65.5Q343,88,386,117.5Q429,147,415.5,198.5Q402,250,406.5,295.5Z;
-
-                            M443.5,295.5Q445,341,408.5,369.5Q372,398,329.5,441.5Q287,485,245,440Q203,395,164,369.5Q125,344,105,297Q85,250,90.5,195Q96,140,144,112.5Q192,85,239.5,64Q287,43,333.5,65.5Q380,88,423,117.5Q466,147,452.5,198.5Q439,250,443.5,295.5Z;
-
-                            M405,295.5Q408,341,371.5,369.5Q335,398,292.5,441.5Q250,485,208,440Q166,395,127,369.5Q88,344,68,297Q48,250,53.5,195Q59,140,107,112.5Q155,85,202.5,64Q250,43,296.5,65.5Q343,88,386,117.5Q429,147,415.5,198.5Q402,250,405,295.5Z;
-
-
-                            "
-              ></animate>
-            </path>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-
-    <section id="about" class="about">
-      <div class="img-about scroll-scale">
-        <img src="img/about_section_foto.png" alt="" />
-        <div class="info-about1">
-          <span>1+</span>
-          <p>Years of Experience</p>
-        </div>
-        <div class="info-about2">
-          <span>20+</span>
-          <p>Project Complete</p>
-        </div>
-        <div class="info-about3">
-          <span>50+</span>
-          <p>Happy Clients</p>
-        </div>
-      </div>
-
-      <div class="about-content scroll-scale">
-        <span>Let me introduce myself</span>
-        <h2>About Me</h2>
-        <h3>Driving Innovation & Excellence</h3>
-        <p>
-          I am Rangga Dwi Saputra, a versatile Project Manager, Scrum Master,
-          and Mobile Developer with 1 years of experience leading high-impact
-          projects across various industries. I specialize in delivering
-          innovative solutions that drive business growth, whether it's
-          developing user-friendly mobile apps, managing cross-functional teams,
-          or ensuring projects are delivered on time and within scope. My
-          passion for technology and commitment to excellence help me create
-          impactful, scalable solutions that exceed expectations.
-        </p>
-
-        <div class="btn-box">
-          <a href="#services" class="btn">My Services!</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="main-text scroll-scale">
-        <span>What i will do for you</span>
-        <h2>My Services</h2>
-      </div>
-
-      <div class="section-services scroll-bottom">
-        <div class="service-box">
-          <i class="bx bx-calendar-check service-icon"></i>
-          <h3>Project Manager</h3>
-          <p>
-            As a Project Manager, I make sure every step of a project goes as
-            planned. From planning, executing, to finishing, I lead the team,
-            manage time, and ensure the project goals are achieved successfully.
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+      <div class="hero__container">
+        <div class="hero__content">
+          
+          <h1 class="hero__title">
+            Building Digital Products<br>
+            <span class="hero__title-accent">That Drive Results</span>
+          </h1>
+          
+          <p class="hero__subtitle">
+            I'm Rangga Dwi Saputra — a results-driven Full Stack Mobile Developer who 
+            transforms complex business challenges into elegant, scalable solutions. 
+            With 25+ projects delivered and Tech Lead experience in Singapore, I bring 
+            technical excellence and strategic thinking to every engagement.
           </p>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bx-network-chart service-icon"></i>
-          <h3>Scrum Master</h3>
-          <p>
-            As a Scrum Master, I help agile teams follow Scrum principles. My
-            tasks include facilitating daily meetings, solving any blockers, and
-            making sure the team stays focused on the sprint goals to deliver
-            the best results.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bx-code-block service-icon"></i>
-          <h3>Mobile Developer</h3>
-          <p>
-            As a Mobile Developer, I design and develop innovative mobile apps.
-            My focus is on creating responsive, functional, and user-friendly
-            solutions using the latest technology for both Android and iOS
-            platforms.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bx-code-alt service-icon"></i>
-          <h3>Web Developer</h3>
-          <p>
-            As a Web Developer, I focus on building responsive and functional
-            websites. Using modern technologies like HTML, CSS, and JavaScript,
-            I create dynamic and user-friendly web solutions.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bx-calendar-event service-icon"></i>
-          <h3>Event Organizer</h3>
-          <p>
-            As an Event Organizer, I have experience in planning and organizing
-            various events, from start to finish, to ensure they run smoothly
-            and leave a lasting impression.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bx-briefcase-alt service-icon"></i>
-          <h3>Freelancer</h3>
-          <p>
-            As a Freelancer, I offer services from design to app development. My
-            flexibility allows me to handle various projects efficiently and
-            deliver the best results.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bx-cog service-icon"></i>
-          <h3>Software Engineer</h3>
-          <p>
-            As a Software Engineer, I design, develop, and maintain software
-            systems. My focus is to ensure that each system works smoothly and
-            provides efficient solutions for business.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bxl-java service-icon"></i>
-          <h3>Java Programmer</h3>
-          <p>
-            As a Java Programmer, I develop applications using Java. I
-            specialize in frameworks like Spring and Hibernate to build strong,
-            secure, and scalable applications.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-      <div class="main-text scroll-scale">
-        <span>Technical and Professional</span>
-        <h2>My Skills</h2>
-      </div>
-
-      <div class="skill-main">
-        <div class="skill-left scroll-scale">
-          <h3>Technical Skills</h3>
-          <div class="skill-bar">
-            <div class="info">
-              <p>Mobile App (Flutter)</p>
-              <p>80%</p>
-            </div>
-            <div class="bar">
-              <span class="mobile"></span>
-            </div>
+          
+          <div class="hero__roles">
+            <span class="hero__role">Flutter Developer</span>
+            <span class="hero__role">Software Engineer</span>
+            <span class="hero__role">Project Manager</span>
+            <span class="hero__role">Scrum Master</span>
+            <span class="hero__role">Full-Stack Capable</span>
           </div>
-          <div class="skill-bar">
-            <div class="info">
-              <p>Scrum Master</p>
-              <p>75%</p>
-            </div>
-            <div class="bar">
-              <span class="scrum"></span>
-            </div>
+          
+          <div class="hero__actions">
+            <a href="CV-Rangga Dwi Saputra.pdf" class="btn btn--primary" download>
+              <i class='bx bx-download'></i>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn--secondary">
+              <i class='bx bx-envelope'></i>
+              Get in Touch
+            </a>
           </div>
-          <div class="skill-bar">
-            <div class="info">
-              <p>Project Manager</p>
-              <p>72%</p>
-            </div>
-            <div class="bar">
-              <span class="project"></span>
-            </div>
-          </div>
-          <div class="skill-bar">
-            <div class="info">
-              <p>Web Development</p>
-              <p>70%</p>
-            </div>
-            <div class="bar">
-              <span class="web"></span>
-            </div>
-          </div>
-          <div class="skill-bar">
-            <div class="info">
-              <p>Event Planning</p>
-              <p>74%</p>
-            </div>
-            <div class="bar">
-              <span class="event"></span>
-            </div>
+          
+          <div class="hero__social">
+            <a href="mailto:ranggadwi16@gmail.com" class="hero__social-link" title="Email">
+              <i class='bx bx-envelope'></i>
+            </a>
+            <a href="https://github.com/RanggaDwi16" class="hero__social-link" target="_blank" title="GitHub">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ranggadwi16/" class="hero__social-link" target="_blank" title="LinkedIn">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://www.instagram.com/ranggaadwi_/" class="hero__social-link" target="_blank" title="Instagram">
+              <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://x.com/RnggDw_" class="hero__social-link" target="_blank" title="Twitter/X">
+              <i class='bx bxl-twitter'></i>
+            </a>
           </div>
         </div>
-
-        <div class="skill-right scroll-scale">
-          <h3>Professional Skills</h3>
-          <div class="professional">
-            <div class="box">
-              <div class="circle" data-dots="80" data-percent="95"></div>
-              <div class="text">
-                <big>95%</big>
-                <small>Leadership</small>
+        
+        <div class="hero__image">
+          <div class="hero__image-wrapper">
+            <div class="hero__image-decoration"></div>
+            <div class="hero__image-bg"></div>
+            <img src="Foto Rangga.png" alt="Rangga Dwi Saputra" class="hero__image-photo" />
+          </div>
+          
+          <div class="hero__stats">
+            <div class="hero__stat-card" style="--i: 1">
+              <div class="hero__stat-icon">
+                <i class='bx bx-briefcase'></i>
+              </div>
+              <div class="hero__stat-content">
+                <h4>2+ Years</h4>
+                <p>Experience</p>
               </div>
             </div>
-            <div class="box">
-              <div class="circle" data-dots="80" data-percent="90"></div>
-              <div class="text">
-                <big>90%</big>
-                <small>Team Work</small>
+            <div class="hero__stat-card" style="--i: 2">
+              <div class="hero__stat-icon">
+                <i class='bx bx-folder'></i>
+              </div>
+              <div class="hero__stat-content">
+                <h4>25+ Projects</h4>
+                <p>Delivered</p>
               </div>
             </div>
-            <div class="box">
-              <div class="circle" data-dots="80" data-percent="85"></div>
-              <div class="text">
-                <big>85%</big>
-                <small>Problem Solving</small>
+            <div class="hero__stat-card" style="--i: 3">
+              <div class="hero__stat-icon">
+                <i class='bx bx-buildings'></i>
               </div>
-            </div>
-            <div class="box">
-              <div class="circle" data-dots="80" data-percent="80"></div>
-              <div class="text">
-                <big>80%</big>
-                <small>Public Speaking</small>
-              </div>
-            </div>
-            <div class="box">
-              <div class="circle" data-dots="80" data- percent="90"></div>
-              <div class="text">
-                <big>90%</big>
-                <small>Adaptability</small>
-              </div>
-            </div>
-            <div class="box">
-              <div class="circle" data-dots="80" data-percent="92"></div>
-              <div class="text">
-                <big>92%</big>
-                <small>Time Management</small>
+              <div class="hero__stat-content">
+                <h4>7+ Companies</h4>
+                <p>Collaborated</p>
               </div>
             </div>
           </div>
@@ -407,703 +160,1112 @@
       </div>
     </section>
 
-    <!-- Portofolio Section -->
-    <section id="portofolio" class="portofolio">
-      <div class="main-text scroll-scale">
-        <span>What i will do for you</span>
-        <h2>Latest Project</h2>
-      </div>
-
-      <div class="container">
-        <div class="fillter-buttons scroll-scale">
-          <button class="button" data-filter="all">All</button>
-          <button class="button" data-filter=".mobile">Mobile App</button>
-          <button class="button" data-filter=".web">Web App</button>
-          <button class="button" data-filter=".event">Achievement</button>
-          <button class="button" data-filter=".certificate">
-            Certification
-          </button>
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="section section--gray" id="about">
+      <div class="section__container">
+        <div class="about__grid">
+          <div class="about__image-wrapper reveal-left">
+            <img src="Memoji.png" alt="About Rangga" class="about__image" />
+            
+            <div class="about__image-card about__image-card--experience">
+              <div class="icon">
+                <i class='bx bx-trophy'></i>
+              </div>
+              <div>
+                <h4>2+</h4>
+                <p>Years Experience</p>
+              </div>
+            </div>
+            
+            <div class="about__image-card about__image-card--projects">
+              <h4>25+</h4>
+              <p>Projects Delivered</p>
+            </div>
+          </div>
+          
+          <div class="about__content reveal-right">
+            <span class="section__label">About Me</span>
+            <h3>Turning Vision Into Reality Through Code & Leadership</h3>
+            
+            <p>
+              I'm a Full Stack Mobile Developer and Tech Enthusiast with experience spanning 
+              multiple industries — from fintech to enterprise solutions. My journey includes 
+              leading cross-functional teams in Singapore, developing apps for major Indonesian 
+              corporations, and consistently earning "Best Intern" awards at every MSIB program.
+            </p>
+            
+            <p>
+              As a <strong>Djarum Plus Scholarship Recipient</strong> (1 of 516 nationwide) and 
+              <strong>Honors Class Student</strong>, I combine academic excellence with real-world 
+              impact. I don't just write code — I architect scalable solutions, mentor developers, 
+              and bridge technical teams with business stakeholders. Currently consulting for 
+              enterprise clients on Flutter best practices and clean architecture.
+            </p>
+            
+            <div class="about__highlights stagger">
+              <div class="about__highlight">
+                <span class="about__highlight-icon">
+                  <i class='bx bx-check'></i>
+                </span>
+                <span class="about__highlight-text">Flutter & Cross-Platform Development</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-icon">
+                  <i class='bx bx-check'></i>
+                </span>
+                <span class="about__highlight-text">Agile/Scrum Methodology Expert</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-icon">
+                  <i class='bx bx-check'></i>
+                </span>
+                <span class="about__highlight-text">Clean Architecture & Best Practices</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-icon">
+                  <i class='bx bx-check'></i>
+                </span>
+                <span class="about__highlight-text">Team Leadership & Mentoring</span>
+              </div>
+            </div>
+            
+            <a href="#services" class="btn btn--accent">
+              <i class='bx bx-right-arrow-alt'></i>
+              Explore My Services
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="portofolio-gallery scroll-bottom">
-          <!-- <div class="port-box mix web">
-            <div class="port-image">
-              <img src="img/web/cashlesspay-web.png" alt="" />
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="section" id="services">
+      <div class="section__container">
+        <div class="section__header reveal">
+          <span class="section__label">What I Bring to the Table</span>
+          <h2 class="section__title">Expertise That Delivers Impact</h2>
+          <p class="section__description">
+            I offer end-to-end solutions that combine technical proficiency with 
+            strategic thinking — ensuring every project creates measurable business value.
+          </p>
+        </div>
+        
+        <div class="services__grid stagger">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class='bx bx-mobile-alt'></i>
             </div>
-            <div class="port-content">
-              <h3>CashlessPay Web</h3>
-            </div>
+            <h3 class="service-card__title">Mobile App Development</h3>
+            <p class="service-card__description">
+              Building high-performance, cross-platform mobile applications with Flutter. 
+              From concept to deployment on App Store & Play Store — delivering apps that 
+              users love and businesses rely on.
+            </p>
           </div>
-          <div class="port-box mix web">
-            <div class="port-image">
-              <img src="img/web/stablex-demo.png" alt="" />
+          
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class='bx bx-calendar-check'></i>
             </div>
-            <div class="port-content">
-              <h3>StableX Demo</h3>
-            </div>
+            <h3 class="service-card__title">Project Management</h3>
+            <p class="service-card__description">
+              Orchestrating complex projects with precision. I define roadmaps, manage 
+              stakeholder expectations, and ensure delivery excellence — consistently 
+              meeting deadlines without compromising quality.
+            </p>
           </div>
-          <div class="port-box mix web">
-            <div class="port-image">
-              <img src="img/web/mcp.png" alt="" />
+          
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class='bx bx-git-branch'></i>
             </div>
-            <div class="port-content">
-              <h3>MCP Web</h3>
-            </div>
-          </div> -->
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/rasa-chatbot.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Rasa Chatbot LLM</h3>
-            </div>
+            <h3 class="service-card__title">Scrum Mastery</h3>
+            <p class="service-card__description">
+              Empowering agile teams to reach peak performance. I remove blockers, 
+              facilitate effective ceremonies, and foster a culture of continuous 
+              improvement that accelerates delivery velocity.
+            </p>
           </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/umkm.png" alt="" />
+          
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class='bx bx-code-alt'></i>
             </div>
-            <div class="port-content">
-              <h3>UMKM Mobile</h3>
-            </div>
+            <h3 class="service-card__title">Full-Stack Development</h3>
+            <p class="service-card__description">
+              Crafting responsive web applications using modern tech stacks. 
+              From RESTful APIs to beautiful frontends — I build complete solutions 
+              that are secure, scalable, and maintainable.
+            </p>
           </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/canvasser.png" alt="" />
+          
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class='bx bx-cog'></i>
             </div>
-            <div class="port-content">
-              <h3>Canvasser Mobile</h3>
-            </div>
+            <h3 class="service-card__title">Software Architecture</h3>
+            <p class="service-card__description">
+              Designing robust system architectures that stand the test of time. 
+              I implement clean code principles, design patterns, and SOLID foundations 
+              that make codebases a joy to work with.
+            </p>
           </div>
-          <div class="port-box mix web">
-            <div class="port-image">
-              <img src="img/web/siadin-web.png" alt="" />
+          
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class='bx bx-bulb'></i>
             </div>
-            <div class="port-content">
-              <h3>Siadin Web</h3>
-            </div>
+            <h3 class="service-card__title">Technical Consultation</h3>
+            <p class="service-card__description">
+              Providing strategic guidance on technology decisions. Whether you're 
+              starting from scratch or modernizing legacy systems, I help you 
+              choose the right tools and approaches for success.
+            </p>
           </div>
-          <div class="port-box mix web">
-            <div class="port-image">
-              <img src="img/web/kaisar-web.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Kaisar Barbershop Academy</h3>
-            </div>
-          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/Store App.png" alt="" />
+    <!-- ============================================
+         SKILLS SECTION
+         ============================================ -->
+    <section class="section section--gray" id="skills">
+      <div class="section__container">
+        <div class="section__header reveal">
+          <span class="section__label">Technical Arsenal</span>
+          <h2 class="section__title">Skills & Proficiency</h2>
+          <p class="section__description">
+            A well-rounded toolkit combining cutting-edge technical skills with 
+            essential soft skills for modern software development.
+          </p>
+        </div>
+        
+        <div class="skills__wrapper">
+          <div class="skills__group reveal-left">
+            <h3>Core Technical Competencies</h3>
+            
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Flutter & Dart Development</span>
+                <span class="skill-item__percent">90%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__progress" data-width="90"></div>
+              </div>
             </div>
-            <div class="port-content">
-              <h3>Store App</h3>
+            
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">React, Next.js & TypeScript</span>
+                <span class="skill-item__percent">75%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__progress" data-width="75"></div>
+              </div>
             </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/STI.png" alt="" />
+            
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Node.js, Express & Backend</span>
+                <span class="skill-item__percent">72%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__progress" data-width="72"></div>
+              </div>
             </div>
-            <div class="port-content">
-              <h3>STI Mobile: Bimbingan Online</h3>
+            
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">RESTful API & Database (MySQL, MongoDB)</span>
+                <span class="skill-item__percent">78%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__progress" data-width="78"></div>
+              </div>
             </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/GetCrew.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Get Crew App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/tomboati.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Tombo Ati App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/moviebox.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Movie Box ID</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/Kanolana.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Kanolana App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/DTP MyTelkomsat.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>DTP MyTelkomsat App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/TsatGo.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>TsatGo App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/IOT 3WINS.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>IOT 3WINS App</h3>
+            
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Git, Firebase & DevOps Tools</span>
+                <span class="skill-item__percent">80%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__progress" data-width="80"></div>
+              </div>
             </div>
           </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/KMS Balita.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>KMS Balita App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/E-Commerce iPhone.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>E-Commerce iPhone App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/Lapor Book.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Lapor Book App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/Catatan Keuangan.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Catatan Keuangan App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/Absen App.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Absen App</h3>
-            </div>
-          </div>
-          <div class="port-box mix mobile">
-            <div class="port-image">
-              <img src="img/mobileApp/Viding.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Virtual Wedding App</h3>
-            </div>
-          </div>
-
-          <div class="port-box mix web">
-            <div class="port-image">
-              <img src="img/web/Maxwell Hotel.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Web Maxwell Hotel</h3>
-            </div>
-          </div>
-          <div class="port-box mix web">
-            <div class="port-image">
-              <img src="img/web/Crypto Currency.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Web Crypto Currency</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Seminar 1 UPB.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>
-                Seminar Pengenalan dan Pengembangan Aplikasi Mobile Menggunakan
-                Flutter
-              </h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Seminar 2 UPB.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>
-                Seminar Integrasi Teknologi Cerdas Dalam Pengembangan Aplikasi
-                Mobile
-              </h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/SharingSession GDSC.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>GDSC Sharing Session</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/DST Flutter.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Doscom Sharing Time</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Foto.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Doscom Sharing Time</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Present Project MyTelkomsat.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Present Project MyTelkomsat</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img
-                src="img/event/Koordinator Public Relation Doscom.jpg"
-                alt=""
-              />
-            </div>
-            <div class="port-content">
-              <h3>Koordinator PR DOSCOM</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Leadership_Developmen_Beswan.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Leadership Development Beswan</h3>
-            </div>
-          </div>
-
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Duta Entrepenrur.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Duta Entrepreneur Jateng 2024</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Awarding MSIB IT.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Awarding MSIB IT</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Intern MSIB Telkomsat.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Intern MSIB Telkomsat</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Win Quiz Telkomsat.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Internal Sharing Telkomsat 1</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Win Quiz Telkomsat 2.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Internal Sharing Telkomsat 2</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Win Quiz Telkomsat 3.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Internal Sharing Telkomsat 3</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Best Ambassador.jpeg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Best Ambassador Ai4impact</h3>
-            </div>
-          </div>
-
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Character Building Beswan.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Character Building Beswan</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Divisi Event.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Event Division Beswan</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/First Gathering Beswan.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>First Gathering Beswan</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Asistensi Sertifikasi.jpeg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Certification Assistance</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Teaching Assistant.jpeg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Teaching Assistant</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Bengkel Koding .jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Bengkel Koding</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/HIPMI.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>HIPMI</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/corcomTelkomsat-65.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>PT Telkom Satelit Indonesia</h3>
-            </div>
-          </div>
-
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Doscom.jpeg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>DOSCOM</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/MC Entrepreneur Week.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>MC Entrepreneur Week HIPMI</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Entrepreneur Week Committee.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Entrepreneur Week HIPMI</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/MC Release Party.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>MC Release Party DOSCOM</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Release Party.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Release Party DOSCOM</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Hipmi Cup.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>HIPMI CUP</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Pelantikan.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Pelantikan HIPMI</h3>
-            </div>
-          </div>
-          <div class="port-box mix event">
-            <div class="port-image">
-              <img src="img/event/Upgrading HIPMII.JPG" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Upgrading HIPMI</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/SEMINAR 1 UPB.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>
-                Seminar Pengenalan dan Pengembangan Aplikasi Mobile Menggunakan
-                Flutter
-              </h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Event Manager-Duta.png" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Event Manager Duta</h3>
-            </div>
-          </div>
-          <!--                 
-                <div class="port-box mix certificate ">
-                    <div class="port-image">
-                        <img src="img/certificate/Sertifikat 1.jpg" alt="">
-                    </div>
-                    <div class="port-content">
-                        <h3>BNSP Junior Mobile Programmer</h3>
-                    </div>
+          
+          <div class="skills__group reveal-right">
+            <h3>Key Soft Skills</h3>
+            
+            <div class="skills__professional">
+              <div class="skill-circle">
+                <div class="skill-circle__ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" data-percent="95"></circle>
+                  </svg>
+                  <span class="skill-circle__percent">95%</span>
                 </div>
-                
-                <div class="port-box mix certificate">
-                    <div class="port-image">
-                        <img src="img/certificate/Sertifikat 2.jpg" alt="">
-                    </div>
-                    <div class="port-content">
-                        <h3>BNSP Junior Mobile Programmer</h3>
-                    </div>
-                </div> -->
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img
-                src="img/certificate/7842550_Rangga Dwi Saputra_IT Mobile Developer_page-0001.jpg"
-                alt=""
-              />
-            </div>
-            <div class="port-content">
-              <h3>IT Mobile Developer</h3>
-            </div>
-          </div>
-
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/The Best MSIB Program.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>The Best MSIB Program</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/The Best Contributor.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>The Best Contributor</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Bengkel Koding Program.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Bengkel Koding Program</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img
-                src="img/certificate/Rangga Dwi Saputra - TOP AMBASSADOR AI4IMPACT.jpg"
-                alt=""
-              />
-            </div>
-            <div class="port-content">
-              <h3>Top Ambassador Ai4impact</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img
-                src="img/certificate/Getting Started with Deep Learning - NVIDIA.jpg"
-                alt=""
-              />
-            </div>
-            <div class="port-content">
-              <h3>Deep Learning</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Sertifikat MC EW.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Master Of Ceremony</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Sertifikat MC.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Master Of Ceremony</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Staff of The Month.jpeg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Staff Of The Month</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Dicoding - Flutter.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Dicoding</h3>
-              <h3>Flutter</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Dicoding - Dasar Dart.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Dicoding</h3>
-              <h3>Dasar Dart</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img
-                src="img/certificate/Dicoding - Dasar UX Design.jpg"
-                alt=""
-              />
-            </div>
-            <div class="port-content">
-              <h3>Dicoding</h3>
-              <h3>Dasar UX Design</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Dicoding - Front End Dev.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Dicoding</h3>
-              <h3>Front End Dev</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img src="img/certificate/Dicoding - Git.jpg" alt="" />
-            </div>
-            <div class="port-content">
-              <h3>Dicoding</h3>
-              <h3>Git</h3>
-            </div>
-          </div>
-          <div class="port-box mix certificate">
-            <div class="port-image">
-              <img
-                src="img/certificate/Dicoding - Pengembang Software.jpg"
-                alt=""
-              />
-            </div>
-            <div class="port-content">
-              <h3>Dicoding</h3>
-              <h3>Software Dev</h3>
+                <span class="skill-circle__name">Leadership</span>
+              </div>
+              
+              <div class="skill-circle">
+                <div class="skill-circle__ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" data-percent="92"></circle>
+                  </svg>
+                  <span class="skill-circle__percent">92%</span>
+                </div>
+                <span class="skill-circle__name">Collaboration</span>
+              </div>
+              
+              <div class="skill-circle">
+                <div class="skill-circle__ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" data-percent="88"></circle>
+                  </svg>
+                  <span class="skill-circle__percent">88%</span>
+                </div>
+                <span class="skill-circle__name">Problem Solving</span>
+              </div>
+              
+              <div class="skill-circle">
+                <div class="skill-circle__ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" data-percent="85"></circle>
+                  </svg>
+                  <span class="skill-circle__percent">85%</span>
+                </div>
+                <span class="skill-circle__name">Communication</span>
+              </div>
+              
+              <div class="skill-circle">
+                <div class="skill-circle__ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" data-percent="90"></circle>
+                  </svg>
+                  <span class="skill-circle__percent">90%</span>
+                </div>
+                <span class="skill-circle__name">Adaptability</span>
+              </div>
+              
+              <div class="skill-circle">
+                <div class="skill-circle__ring">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" data-percent="92"></circle>
+                  </svg>
+                  <span class="skill-circle__percent">92%</span>
+                </div>
+                <span class="skill-circle__name">Time Management</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contant">
-      <div class="main-text scroll-scale">
-        <span>Ask me questions</span>
-        <h2>Contact Me</h2>
-      </div>
-
-      <form action="#" class="scroll-bottom">
-        <input type="text" placeholder="Your Name" />
-        <input type="text" placeholder="Your Email" />
-        <input type="text" placeholder="Your Address" />
-        <input type="number" placeholder="Your Phone Number" />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <div class="btn-box formBtn">
-          <button type="submit" class="btn">Send Message</button>
+    <!-- ============================================
+         EXPERIENCE SECTION
+         ============================================ -->
+    <section class="section" id="experience">
+      <div class="section__container">
+        <div class="section__header reveal">
+          <span class="section__label">Career Path</span>
+          <h2 class="section__title">Experience & Education</h2>
+          <p class="section__description">
+            A proven track record of delivering results across multiple companies 
+            and continuous growth in the technology industry.
+          </p>
         </div>
-      </form>
+        
+        <div class="experience__timeline">
+          <!-- Current Position -->
+          <div class="experience-item reveal">
+            <div class="experience-item__dot"></div>
+            <div class="experience-item__card">
+              <span class="experience-item__date">Jul 2025 - Present</span>
+              <h4 class="experience-item__title">Consultant Mobile App Developer</h4>
+              <p class="experience-item__company">PT Mekar Investama Teknologi • Jakarta, Indonesia</p>
+              <p class="experience-item__description">
+                Providing strategic technical consultation for enterprise mobile applications. 
+                Advising clients on Flutter best practices, clean architecture, and performance 
+                optimization. Implementing scalable state management with Riverpod & GetX 
+                while ensuring seamless RESTful API integrations.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Tech Lead Position -->
+          <div class="experience-item reveal">
+            <div class="experience-item__dot"></div>
+            <div class="experience-item__card">
+              <span class="experience-item__date">Apr 2025 - Oct 2025</span>
+              <h4 class="experience-item__title">Front End & Mobile Developer Tech Lead</h4>
+              <p class="experience-item__company">Anantla Tech Ventures • Singapore</p>
+              <p class="experience-item__description">
+                <strong><i class='bx bx-rocket'></i> Led cross-functional team</strong> delivering high-performance Flutter apps 
+                with 95%+ code quality standards. Architected scalable mobile solutions with clean 
+                code principles. Mentored junior developers on Flutter best practices, state 
+                management patterns, and Firebase integration.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Mobile Developer -->
+          <div class="experience-item reveal">
+            <div class="experience-item__dot"></div>
+            <div class="experience-item__card">
+              <span class="experience-item__date">Apr 2025 - Jun 2025</span>
+              <h4 class="experience-item__title">Mobile Developer</h4>
+              <p class="experience-item__company">PT Abimantrana Rekadaya Mandiri • Jakarta, Indonesia</p>
+              <p class="experience-item__description">
+                Developed Ewa Mobile and Wiz Canvasser Mobile Application for Bank DKI. 
+                Collaborated with project managers and cross-functional teams to deliver 
+                enterprise solutions meeting strict banking compliance requirements.
+              </p>
+            </div>
+          </div>
+          
+          <!-- MSIB Indi -->
+          <div class="experience-item reveal">
+            <div class="experience-item__dot"></div>
+            <div class="experience-item__card">
+              <span class="experience-item__date">Sep 2024 - Dec 2024</span>
+              <h4 class="experience-item__title">Mobile App Developer (MSIB)</h4>
+              <p class="experience-item__company">PT Indi Teknokreasi Internasional • Jakarta, Indonesia</p>
+              <p class="experience-item__description">
+                <strong><i class='bx bx-trophy'></i> Awarded "Best of The Best Intern"</strong> among 30 participants. 
+                Led full migration of Tombo Ati app from Kotlin to Flutter, improving 
+                cross-platform performance. Developed Get Crew application and designed 
+                Mobile Development curriculum for Learning Path course.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Kanolana -->
+          <div class="experience-item reveal">
+            <div class="experience-item__dot"></div>
+            <div class="experience-item__card">
+              <span class="experience-item__date">May 2024 - Nov 2024</span>
+              <h4 class="experience-item__title">Flutter Developer</h4>
+              <p class="experience-item__company">PT Kanolana Wisata Kelautan • Jakarta, Indonesia</p>
+              <p class="experience-item__description">
+                Developed Kanolana Customer Mobile Application using Flutter. Collaborated 
+                with UI/UX team achieving 30% increase in user satisfaction. Completed 90% 
+                of sprints on time in Agile environment.
+              </p>
+            </div>
+          </div>
+          
+          <!-- MSIB Telkomsat -->
+          <div class="experience-item reveal">
+            <div class="experience-item__dot"></div>
+            <div class="experience-item__card">
+              <span class="experience-item__date">Feb 2024 - Jun 2024</span>
+              <h4 class="experience-item__title">IT Mobile Developer (MSIB)</h4>
+              <p class="experience-item__company">PT Telkom Satelit Indonesia • Bogor, Indonesia</p>
+              <p class="experience-item__description">
+                <strong><i class='bx bx-trophy'></i> Awarded "Best MSIB Intern"</strong> among 50 participants. Served as 
+                Scrum Master achieving 95% sprint success rate. Developed MyTelkomsat, TsatGo 
+                (50% faster), and IoT 3WINS mobile applications.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Education -->
+          <div class="experience-item reveal">
+            <div class="experience-item__dot"></div>
+            <div class="experience-item__card">
+              <span class="experience-item__date">Oct 2021 - Feb 2025</span>
+              <h4 class="experience-item__title">B.Sc. Informatics Engineering</h4>
+              <p class="experience-item__company">Universitas Dian Nuswantoro • Semarang, Indonesia</p>
+              <p class="experience-item__description">
+                <strong><i class='bx bxs-graduation'></i> GPA: 3.95/4.00</strong> • Djarum Plus Scholarship Recipient (1 of 516 nationwide). 
+                Honors Class Student (Top 50 in program). Collaborated with lecturers on 3 campus 
+                projects. Active in GDSC, HIPMI PT, and Dinus Open Source Community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-      <p class="scroll-scale">
-        Copyright &copy; 2024 by Rangga Dwi Saputra || All Right Reserved
-      </p>
-      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    <!-- ============================================
+         PORTFOLIO SECTION
+         ============================================ -->
+    <section class="section section--gray" id="portfolio">
+      <div class="section__container">
+        <div class="section__header reveal">
+          <span class="section__label">Proof of Work</span>
+          <h2 class="section__title">Featured Projects & Achievements</h2>
+          <p class="section__description">
+            Real-world applications and recognitions that demonstrate my 
+            capabilities and commitment to excellence.
+          </p>
+        </div>
+        
+        <div class="portfolio__filters reveal">
+          <button class="portfolio__filter active" data-filter="all">All</button>
+          <button class="portfolio__filter" data-filter="mobile">Mobile App</button>
+          <button class="portfolio__filter" data-filter="web">Web App</button>
+          <button class="portfolio__filter" data-filter="event">Achievement</button>
+          <button class="portfolio__filter" data-filter="certificate">Certification</button>
+        </div>
+        
+        <div class="portfolio__grid stagger" id="portfolioGrid">
+          <!-- ROW 1: TOP 3 Featured -->
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/TRACE.png" alt="Trace Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Trace App</h3>
+              <p class="portfolio-card__description">Asset tracking & logistics management system</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/SIELIMS.png" alt="SIELIMS Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">SIELIMS</h3>
+              <p class="portfolio-card__description">Integrated laboratory information system</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/ACONSIA.png" alt="Aconsia Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Aconsia</h3>
+              <p class="portfolio-card__description">Business consultation & accounting mobile platform</p>
+            </div>
+          </div>
+          
+          <!-- ROW 2: Second Featured -->
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/MEKARTANI.png" alt="Mekar Tani Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Paten Mekar Tani</h3>
+              <p class="portfolio-card__description">Agricultural management & marketplace platform</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/MEKAREWA.png" alt="Mekar Ewa Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Mekar Ewa</h3>
+              <p class="portfolio-card__description">Enterprise workforce management application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/HYBRIX.png" alt="Hybrix Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Hybrix App</h3>
+              <p class="portfolio-card__description">Fintech hybrid investment platform</p>
+            </div>
+          </div>
+          
+          <!-- MORE MOBILE APPS - New Design -->
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/CHATBOT.png" alt="AI Chatbot Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">AI Chatbot LLM</h3>
+              <p class="portfolio-card__description">AI-powered chatbot with natural language processing</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/INSTAPERFECT.png" alt="Instaperfect Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Instaperfect by Wardah</h3>
+              <p class="portfolio-card__description">Beauty product recommendation chatbot</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/MovieBox.png" alt="MovieBox Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">MovieBox</h3>
+              <p class="portfolio-card__description">Movie discovery & streaming platform</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/KMSBalita.png" alt="KMS Balita Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">KMS Balita</h3>
+              <p class="portfolio-card__description">Child health monitoring application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/IOT3Wins.png" alt="IoT 3WINS Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">IoT 3WINS</h3>
+              <p class="portfolio-card__description">IoT monitoring & control system for Telkomsat</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/ABSENAPP.png" alt="AbsenApp Mobile" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">AbsenApp</h3>
+              <p class="portfolio-card__description">Employee attendance & HR management system</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/LAPORBOOK.png" alt="LaporBook Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">LaporBook</h3>
+              <p class="portfolio-card__description">Digital reporting & documentation platform</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/CATATANKEUANGAN.png" alt="Catatan Keuangan Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Catatan Keuangan</h3>
+              <p class="portfolio-card__description">Personal finance & budgeting application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/new-mobile/E-COMMERCE.png" alt="E-Commerce Mobile App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">E-Commerce App</h3>
+              <p class="portfolio-card__description">Full-featured online shopping marketplace</p>
+            </div>
+          </div>
+          
+          <!-- OLD MOBILE APPS - Original Design -->
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/DTP MyTelkomsat.png" alt="DTP MyTelkomsat" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">DTP MyTelkomsat</h3>
+              <p class="portfolio-card__description">Enterprise mobile app for Telkomsat employees</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/TsatGo.png" alt="TsatGo App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">TsatGo App</h3>
+              <p class="portfolio-card__description">Internal mobility application for Telkomsat</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/Kanolana.png" alt="Kanolana App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Kanolana Customer App</h3>
+              <p class="portfolio-card__description">Marine tourism booking application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/GetCrew.png" alt="Get Crew App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Get Crew App</h3>
+              <p class="portfolio-card__description">Crew management and scheduling application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/tomboati.png" alt="Tombo Ati App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Tombo Ati App</h3>
+              <p class="portfolio-card__description">Islamic prayer and reminder application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/umkm.png" alt="UMKM Mobile" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">UMKM Mobile</h3>
+              <p class="portfolio-card__description">SME management and marketplace application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/canvasser.png" alt="Canvasser Mobile" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Canvasser Mobile</h3>
+              <p class="portfolio-card__description">Sales force automation application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/STI.png" alt="STI Mobile" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">STI Mobile: Bimbingan Online</h3>
+              <p class="portfolio-card__description">Online academic guidance platform</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/Store App.png" alt="Store App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Store App</h3>
+              <p class="portfolio-card__description">E-commerce mobile application</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="mobile">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Mobile App</span>
+              <img src="img/mobileApp/Viding.png" alt="Viding App" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Viding App</h3>
+              <p class="portfolio-card__description">Video conference and meeting application</p>
+            </div>
+          </div>
+          
+          <!-- Web Apps -->
+          <div class="portfolio-card" data-category="web">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Web App</span>
+              <img src="img/web/siadin-web.png" alt="Siadin Web" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Siadin Web</h3>
+              <p class="portfolio-card__description">Academic information system</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="web">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Web App</span>
+              <img src="img/web/kaisar-web.png" alt="Kaisar Barbershop Academy" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Kaisar Barbershop Academy</h3>
+              <p class="portfolio-card__description">Barbershop academy website</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="web">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Web App</span>
+              <img src="img/web/Maxwell Hotel.png" alt="Maxwell Hotel" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Maxwell Hotel</h3>
+              <p class="portfolio-card__description">Hotel booking website</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="web">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Web App</span>
+              <img src="img/web/Crypto Currency.png" alt="Crypto Currency" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Crypto Currency</h3>
+              <p class="portfolio-card__description">Cryptocurrency information website</p>
+            </div>
+          </div>
+          
+          <!-- Achievements -->
+          <div class="portfolio-card" data-category="event">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Achievement</span>
+              <img src="img/event/Best Ambassador.jpeg" alt="Best Ambassador AI4Impact" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Best Ambassador AI4Impact</h3>
+              <p class="portfolio-card__description">Top ambassador award recognition</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="event">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Achievement</span>
+              <img src="img/event/Duta Entrepenrur.JPG" alt="Duta Entrepreneur Jateng 2024" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Duta Entrepreneur Jateng 2024</h3>
+              <p class="portfolio-card__description">Central Java entrepreneur ambassador</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="event">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Achievement</span>
+              <img src="img/event/Awarding MSIB IT.jpg" alt="Awarding MSIB IT" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Best MSIB Program Award</h3>
+              <p class="portfolio-card__description">Top performer in MSIB internship</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="event">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Achievement</span>
+              <img src="img/event/Leadership_Developmen_Beswan.jpg" alt="Leadership Development" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Leadership Development</h3>
+              <p class="portfolio-card__description">Beswan Djarum scholarship program</p>
+            </div>
+          </div>
+          
+          <!-- Certifications -->
+          <div class="portfolio-card" data-category="certificate">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Certification</span>
+              <img src="img/certificate/7842550_Rangga Dwi Saputra_IT Mobile Developer_page-0001.jpg" alt="IT Mobile Developer" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">IT Mobile Developer BNSP</h3>
+              <p class="portfolio-card__description">Professional certification from BNSP</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="certificate">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Certification</span>
+              <img src="img/certificate/The Best MSIB Program.jpg" alt="Best MSIB Program" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">The Best MSIB Intern</h3>
+              <p class="portfolio-card__description">PT Telkom Satelit Indonesia</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="certificate">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Certification</span>
+              <img src="img/certificate/Getting Started with Deep Learning - NVIDIA.jpg" alt="NVIDIA Deep Learning" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Deep Learning - NVIDIA</h3>
+              <p class="portfolio-card__description">AI and machine learning certification</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="certificate">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Certification</span>
+              <img src="img/certificate/Dicoding - Flutter.jpg" alt="Dicoding Flutter" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Flutter Development</h3>
+              <p class="portfolio-card__description">Dicoding Indonesia certification</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="certificate">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Certification</span>
+              <img src="img/certificate/Dicoding - Front End Dev.jpg" alt="Dicoding Front End" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Front End Development</h3>
+              <p class="portfolio-card__description">Dicoding Indonesia certification</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="certificate">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Certification</span>
+              <img src="img/certificate/Rangga Dwi Saputra - TOP AMBASSADOR AI4IMPACT.jpg" alt="Top Ambassador AI4Impact" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Top Ambassador AI4Impact</h3>
+              <p class="portfolio-card__description">AI ambassador achievement</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="event">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Achievement</span>
+              <img src="img/event/Seminar 1 UPB.png" alt="Seminar UPB" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">Speaker: Flutter Development</h3>
+              <p class="portfolio-card__description">Seminar at Universitas Panca Bakti</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-card" data-category="event">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__category">Achievement</span>
+              <img src="img/event/corcomTelkomsat-65.JPG" alt="PT Telkomsat" />
+            </div>
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title">PT Telkom Satelit Indonesia</h3>
+              <p class="portfolio-card__description">Corporate engagement and development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="section" id="contact">
+      <div class="section__container">
+        <div class="section__header reveal">
+          <span class="section__label">Ready to Connect</span>
+          <h2 class="section__title">Let's Build Something Great</h2>
+          <p class="section__description">
+            Whether you're looking to hire, collaborate on a project, or simply want to 
+            discuss technology — I'd love to hear from you.
+          </p>
+        </div>
+        
+        <div class="contact__wrapper">
+          <div class="contact__info reveal-left">
+            <h3>Let's Start a Conversation</h3>
+            <p>
+              I'm actively seeking opportunities where I can contribute, learn, and grow. 
+              If you're looking for a dedicated developer who brings both technical skills 
+              and a collaborative mindset — let's talk!
+            </p>
+            
+            <div class="contact__cards">
+              <a href="mailto:ranggadwi16@gmail.com" class="contact__card">
+                <div class="contact__card-icon">
+                  <i class='bx bx-envelope'></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4>Email</h4>
+                  <p>ranggadwi16@gmail.com</p>
+                </div>
+              </a>
+              
+              <a href="https://wa.me/+62895705458597" class="contact__card" target="_blank">
+                <div class="contact__card-icon">
+                  <i class='bx bxl-whatsapp'></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4>WhatsApp</h4>
+                  <p>+62 895-7054-58597</p>
+                </div>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/ranggadwi16/" class="contact__card" target="_blank">
+                <div class="contact__card-icon">
+                  <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4>LinkedIn</h4>
+                  <p>ranggadwi16</p>
+                </div>
+              </a>
+              
+              <div class="contact__card">
+                <div class="contact__card-icon">
+                  <i class='bx bx-map'></i>
+                </div>
+                <div class="contact__card-content">
+                  <h4>Location</h4>
+                  <p>Jakarta, Indonesia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact__form reveal-right" id="contactForm">
+            <form id="emailForm">
+              <div class="contact__form-row">
+                <div class="contact__form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="contact__form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+              
+              <div class="contact__form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+62 812 3456 7890" />
+              </div>
+              
+              <div class="contact__form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project Discussion" required />
+              </div>
+              
+              <div class="contact__form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn--primary contact__form-submit" id="submitBtn">
+                <i class='bx bx-send'></i>
+                Send Message
+              </button>
+            </form>
+            
+            <div class="contact__success" id="successMessage">
+              <div class="contact__success-icon">
+                <i class='bx bx-check'></i>
+              </div>
+              <h4>Message Sent Successfully!</h4>
+              <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <h3>Rangga<span>Dwi</span></h3>
+            <p>
+              A passionate Software Engineer dedicated to building innovative 
+              digital solutions that make a difference.
+            </p>
+            <div class="footer__social">
+              <a href="mailto:ranggadwi16@gmail.com" title="Email">
+                <i class='bx bx-envelope'></i>
+              </a>
+              <a href="https://github.com/RanggaDwi16" target="_blank" title="GitHub">
+                <i class='bx bxl-github'></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ranggadwi16/" target="_blank" title="LinkedIn">
+                <i class='bx bxl-linkedin'></i>
+              </a>
+              <a href="https://www.instagram.com/ranggaadwi_/" target="_blank" title="Instagram">
+                <i class='bx bxl-instagram'></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer__links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Mobile Development</a></li>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Project Management</a></li>
+              <li><a href="#services">Scrum Master</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__links">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:ranggadwi16@gmail.com">ranggadwi16@gmail.com</a></li>
+              <li><a href="https://wa.me/+62895705458597">+62 895-7054-58597</a></li>
+              <li><a href="#contact">Jakarta, Indonesia</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © 2024 Rangga Dwi Saputra. All Rights Reserved.
+          </p>
+          <a href="#home" class="footer__back-to-top" title="Back to top">
+            <i class='bx bx-up-arrow-alt'></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
   </body>
